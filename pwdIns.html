@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Map Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #pwdBX {
+      display: flex;
+      justify-content: center;
+      width: auto;
+      height: auto;
+      margin: 20px;
+      /* border: 1px solid black; */
+      position: relative;
+    }
+
+    #pwdBX #pwd {
+      width: 300px;
+      height: 40px;
+      border: 1px solid black;
+      padding: 5px 10px;
+      border-radius: 10px;
+      outline: none;
+      font-size: 22px;
+    }
+    
+    #pwdBX #btn {
+      width: auto;
+      font-size: 27px;
+      position: absolute;
+      right: 7px;
+      bottom: 2px;
+      color: rgb(92, 88, 88);
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div id="pwdBX">
+    <input type="password" id="pwd" maxlength="25" required>
+    <button type="button" id="btn"></button>
+  </div>
+</body>
+<script src="index.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</html>
